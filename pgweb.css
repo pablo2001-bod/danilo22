@@ -3,8 +3,8 @@ body {
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #282c34; /* Fondo oscuro para un diseño elegante */
-    color: #eceff1; /* Texto claro para contraste */
+    background-color: #282c34; 
+    color: #eceff1; 
 }
 
 header {
