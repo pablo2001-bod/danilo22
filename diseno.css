@@ -1,0 +1,42 @@
+header {
+    padding: 20px;
+    background-color: #0800ff;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background-color: #7c9ae0;
+}
+
+.status {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #ddd;
+    margin-right: 40px; 
+}
+
+.status button {
+    position: relative; 
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.text-center button {
+    background-color: #28a745;
+    border-radius: 20px;
+}
