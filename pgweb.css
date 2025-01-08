@@ -1,86 +1,87 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.8;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #282c34; 
-    color: #eceff1; 
+    background-color: #121212; /* Fondo oscuro para un look moderno */
+    color: #f5f5f5; /* Texto claro */
 }
 
 header {
-    background: linear-gradient(90deg, #4CAF50, #81C784);
+    background: linear-gradient(90deg, #2196F3, #03A9F4); /* Azul degradado vibrante */
     color: white;
     text-align: center;
-    padding: 30px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    padding: 40px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     margin: 0;
-    font-size: 3em;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
 main {
-    padding: 30px;
-    max-width: 800px;
-    margin: 40px auto;
-    background: #1e1f24;
-    border-radius: 12px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #1e1e1e; /* Fondo oscuro elegante */
+    border-radius: 16px;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
 main h2 {
-    color: #81C784;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #81C784;
+    color: #03A9F4; /* Azul vibrante */
+    margin-bottom: 20px;
+    border-bottom: 3px solid #03A9F4;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 8px;
+    font-size: 2em;
 }
 
 pre {
-    background-color: #2e343e;
+    background-color: #292929; /* Fondo más claro para diferenciar */
     padding: 20px;
     border-radius: 12px;
-    border-left: 4px solid #81C784;
-    font-size: 1em;
+    border-left: 6px solid #03A9F4;
+    font-size: 1.1em;
+    color: #d1d1d1;
     white-space: pre-wrap;
-    color: #b0bec5;
 }
 
 img {
     display: block;
     margin: 30px auto;
     max-width: 100%;
-    border: 4px solid #81C784;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border: 5px solid #03A9F4;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 iframe {
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
     width: 100%;
     max-width: 100%;
 }
 
 footer {
-    background: linear-gradient(90deg, #4CAF50, #388E3C);
+    background: linear-gradient(90deg, #0D47A1, #1976D2); /* Tonos de azul más oscuros */
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 1em;
-    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+    padding: 25px;
+    font-size: 1.2em;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
 }
 
 footer a {
-    color: #FFEB3B;
+    color: #FF9800; /* Naranja para contraste */
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #FFC107;
+    color: #FFC107; /* Naranja más claro */
 }
