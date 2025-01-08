@@ -8,13 +8,14 @@
     <title>Semáforo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="diseno.css">
+</head>
 
 <body>
-    <header class="d-flex justify-content-center align-items-center mb-4">
+    <header>
         <h1>Semáforo</h1>
     </header>
-    
-    <div>
+
+    <div class="semaforo">
         <div class="status" id="color1">
             <div class="circle"></div>
             <button onclick="cambiarColor('color1', 'green', 'color2', 'color3')">Pase</button>
@@ -31,19 +32,21 @@
         </div>
     </div>
 
-    <div class="text-center mt-4">
-        <button class="btn btn-primary me-2" onclick="window.location.href='index.html'">Volver a la Página Principal</button>
+    <div class="btn-container">
+        <button class="btn btn-primary" onclick="window.location.href='index.html'">Volver a la Página Principal</button>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         function cambiarColor(idElemento, color, idOtroElemento, otro) {
-            const d = document.getElementById(idElemento).querySelector('.circle');
-            d.style.backgroundColor = color;
-            const d2 = document.getElementById(idOtroElemento).querySelector('.circle');
-            d2.style.backgroundColor = "";
-            const d3 = document.getElementById(otro).querySelector('.circle');
-            d3.style.backgroundColor = "";
+            const current = document.getElementById(idElemento).querySelector('.circle');
+            current.style.backgroundColor = color;
+
+            const other1 = document.getElementById(idOtroElemento).querySelector('.circle');
+            other1.style.backgroundColor = "";
+
+            const other2 = document.getElementById(otro).querySelector('.circle');
+            other2.style.backgroundColor = "";
         }
     </script>
 </body>
