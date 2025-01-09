@@ -10,45 +10,104 @@
 </head>
 
 <body>
-    <header class="bg-primary text-white text-center py-4">
+    <header class="bg-dark text-white text-center py-4">
         <h1>Audio y Video</h1>
+        <p>Explora nuestros recursos multimedia</p>
     </header>
 
     <main class="container my-5">
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-5">
-                <div class="card shadow-lg">
+        <div class="row g-4">
+            <!-- Sección de Audios -->
+            <div class="col-12">
+                <h2 class="text-center text-primary">Audios</h2>
+            </div>
+
+            <!-- Iteración de audios -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://i.ytimg.com/vi/tKvEnZSoqas/maxresdefault.jpg" class="card-img-top" alt="Audio 1">
                     <div class="card-body text-center">
-                        <h5 class="card-title">Escuchar Audio</h5>
-                        <div class="mb-3">
-                            <img src="https://i.ytimg.com/vi/tKvEnZSoqas/maxresdefault.jpg" class="img-fluid rounded" alt="Imagen de Audio">
-                        </div>
-                        <audio id="audioPlayer" class="w-100" controls>
+                        <h5 class="card-title">Audio 1</h5>
+                        <audio id="audio1" class="w-100" controls>
                             <source src="audio1.mp4" type="audio/mp4">
                             Tu navegador no soporta este formato de audio.
                         </audio>
-                        <div class="d-flex justify-content-center mt-3 gap-3">
-                            <button class="btn btn-success" onclick="document.getElementById('audioPlayer').play()">Reproducir</button>
-                            <button class="btn btn-danger" onclick="document.getElementById('audioPlayer').pause()">Pausar</button>
-                        </div>
+                        <button class="btn btn-success mt-2" onclick="playAudio('audio1')">Reproducir</button>
+                        <button class="btn btn-danger mt-2" onclick="pauseAudio('audio1')">Pausar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://i.ytimg.com/vi/OvaL-ElQ8Lc/hqdefault.jpg" class="card-img-top" alt="Audio 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Audio 2</h5>
+                        <audio id="audio2" class="w-100" controls>
+                            <source src="audio2.mp4" type="audio/mp4">
+                            Tu navegador no soporta este formato de audio.
+                        </audio>
+                        <button class="btn btn-success mt-2" onclick="playAudio('audio2')">Reproducir</button>
+                        <button class="btn btn-danger mt-2" onclick="pauseAudio('audio2')">Pausar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <img src="https://i1.sndcdn.com/artworks-BD8r4Zlg1zZJ76sO-yEd0LA-t240x240.jpg" class="card-img-top" alt="Audio 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Audio 3</h5>
+                        <audio id="audio3" class="w-100" controls>
+                            <source src="audio3.mp4" type="audio/mp4">
+                            Tu navegador no soporta este formato de audio.
+                        </audio>
+                        <button class="btn btn-success mt-2" onclick="playAudio('audio3')">Reproducir</button>
+                        <button class="btn btn-danger mt-2" onclick="pauseAudio('audio3')">Pausar</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-5">
-                <div class="card shadow-lg">
+            <!-- Sección de Videos -->
+            <div class="col-12 mt-5">
+                <h2 class="text-center text-primary">Videos</h2>
+            </div>
+
+            <!-- Iteración de videos -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <video class="w-100 video-player" id="video1" controls>
+                        <source src="video2.mp4" type="video/mp4">
+                        Tu navegador no soporta este formato de video.
+                    </video>
                     <div class="card-body text-center">
-                        <h5 class="card-title">Ver Video</h5>
-                        <div class="d-flex justify-content-center">
-                            <video id="videoPlayer" class="w-100" controls>
-                                <source src="video1.mp4" type="video/mp4">
-                                Tu navegador no soporta este formato de video.
-                            </video>
-                        </div>
-                        <div class="d-flex justify-content-center mt-3 gap-3">
-                            <button class="btn btn-success" onclick="document.getElementById('videoPlayer').play()">Reproducir</button>
-                            <button class="btn btn-danger" onclick="document.getElementById('videoPlayer').pause()">Pausar</button>
-                        </div>
+                        <h5 class="card-title">Video 1</h5>
+                        <button class="btn btn-success mt-2" onclick="playVideo('video1')">Reproducir</button>
+                        <button class="btn btn-danger mt-2" onclick="pauseVideo('video1')">Pausar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <video class="w-100 video-player" id="video2" controls>
+                        <source src="video3.mp4" type="video/mp4">
+                        Tu navegador no soporta este formato de video.
+                    </video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video 2</h5>
+                        <button class="btn btn-success mt-2" onclick="playVideo('video2')">Reproducir</button>
+                        <button class="btn btn-danger mt-2" onclick="pauseVideo('video2')">Pausar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <video class="w-100 video-player" id="video3" controls>
+                        <source src="video4.mp4" type="video/mp4">
+                        Tu navegador no soporta este formato de video.
+                    </video>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video 3</h5>
+                        <button class="btn btn-success mt-2" onclick="playVideo('video3')">Reproducir</button>
+                        <button class="btn btn-danger mt-2" onclick="pauseVideo('video3')">Pausar</button>
                     </div>
                 </div>
             </div>
@@ -60,6 +119,36 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const videoPlayers = document.querySelectorAll('.video-player');
+        const audioPlayers = document.querySelectorAll('audio');
+
+        function playVideo(id) {
+            videoPlayers.forEach((video) => {
+                if (video.id !== id) {
+                    video.pause();
+                }
+            });
+            document.getElementById(id).play();
+        }
+
+        function pauseVideo(id) {
+            document.getElementById(id).pause();
+        }
+
+        function playAudio(id) {
+            audioPlayers.forEach((audio) => {
+                if (audio.id !== id) {
+                    audio.pause();
+                }
+            });
+            document.getElementById(id).play();
+        }
+
+        function pauseAudio(id) {
+            document.getElementById(id).pause();
+        }
+    </script>
 </body>
 
 </html>
