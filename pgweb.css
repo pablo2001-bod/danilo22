@@ -3,12 +3,12 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Fondo oscuro para un look moderno */
-    color: #f5f5f5; /* Texto claro */
+    background-color: #121212; 
+    color: #f5f5f5; 
 }
 
 header {
-    background: linear-gradient(90deg, #2196F3, #03A9F4); /* Azul degradado vibrante */
+    background: linear-gradient(90deg, #2196F3, #03A9F4);
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -26,13 +26,13 @@ main {
     padding: 40px;
     max-width: 900px;
     margin: 50px auto;
-    background: #1e1e1e; /* Fondo oscuro elegante */
+    background: #1e1e1e; 
     border-radius: 16px;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4);
 }
 
 main h2 {
-    color: #03A9F4; /* Azul vibrante */
+    color: #03A9F4;
     margin-bottom: 20px;
     border-bottom: 3px solid #03A9F4;
     display: inline-block;
@@ -41,7 +41,7 @@ main h2 {
 }
 
 pre {
-    background-color: #292929; /* Fondo más claro para diferenciar */
+    background-color: #292929;
     padding: 20px;
     border-radius: 12px;
     border-left: 6px solid #03A9F4;
@@ -67,7 +67,7 @@ iframe {
 }
 
 footer {
-    background: linear-gradient(90deg, #0D47A1, #1976D2); /* Tonos de azul más oscuros */
+    background: linear-gradient(90deg, #0D47A1, #1976D2); 
     color: white;
     text-align: center;
     padding: 25px;
@@ -76,12 +76,12 @@ footer {
 }
 
 footer a {
-    color: #FF9800; /* Naranja para contraste */
+    color: #FF9800; 
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #FFC107; /* Naranja más claro */
+    color: #FFC107; 
 }
